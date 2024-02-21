@@ -10,6 +10,9 @@ html, body{
     background: #313131;
     scroll-behavior: smooth;
 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; /* Para Firefox en macOS */
+  
 }
 
 .main-banner{
@@ -33,7 +36,7 @@ html, body{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.80;
+    opacity: 0.70;/* Ajusta la opacidad para oscurecer más la imagen de fondo */
     align-items: center;
     justify-content: center;
 }
@@ -46,12 +49,14 @@ html, body{
     text-align: center;
     color: #fff;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta el desplazamiento y la difuminación de la sombra según sea necesario */
 }
 
 .container h1{
     margin: 0;
     font-size: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta el desplazamiento y la difuminación de la sombra según sea necesario */
 }
 
 .container h1 span{
@@ -60,11 +65,14 @@ html, body{
     display: inline-block;
 }
 
+b{
+    font-size: 60px;
+}
+
 .cen{
     margin: 20px;
     display: block;
-    font-size: 22px;
-
+    font-size: 42px; /* Ajusta el tamaño de fuente del título */
 }
 
 .button {
@@ -74,6 +82,11 @@ html, body{
     text-decoration: none;
     border-radius: 12px;
     transition: .6s;
+    user-select: none;
+    text-shadow: none; /* Esto elimina cualquier sombra que pueda tener el botón */
+    -webkit-tap-highlight-color: transparent; /* Para WebKit */
+    -moz-tap-highlight-color: transparent; /* Para Firefox */
+    -ms-tap-highlight-color: transparent; /* Para Microsoft Edge */
 }
 
 .button:hover{
@@ -245,6 +258,17 @@ html, body{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+    .cen{
+        font-size: 22px; /* Ajusta el tamaño de fuente del título */
+    }
+    
+    .container{
+        text-transform: uppercase;
+    }
+
+    b{
+        font-size: 32px;
     }
 
     .site-footer .contenedor2{

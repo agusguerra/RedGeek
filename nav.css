@@ -70,7 +70,7 @@ h1{
     cursor: pointer;
     transition: 0.2s linear;
     justify-self: center;
-
+    user-select: none;
 }
 
 .menu-icon:hover{
@@ -92,6 +92,7 @@ h1{
     transition: 0.6s;
     z-index: 3;
     overflow: hidden;
+
 }
 
 .navigation-menu nav{
@@ -169,6 +170,13 @@ h1{
     transition-delay: 1s;
 }
 
+.navigation-menu a, .menu-icon {
+    -webkit-tap-highlight-color: transparent; /* Para WebKit */
+    -moz-tap-highlight-color: transparent; /* Para Firefox */
+    -ms-tap-highlight-color: transparent; /* Para Microsoft Edge */
+    
+}
+
 /* Navbar transparente animación */
 .active-nav{
     background: #1c1c1c;
@@ -200,6 +208,9 @@ h1{
         color: #f1f1f1;
         font-size: 0.7em;
         z-index: 6;
+    }
+    .right-navbar{
+        align-items: center;
     }
 }
 
