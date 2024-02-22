@@ -93,12 +93,23 @@
         </div>
 
         <section>
-            <form action="#" method="post" netlify>
+            <form action="#"    
+                    method="post"
+                    netlify
+                    netlify-honeypot
+                    data-netlify-recaptcha="true"
+                >
                 <h2>Need Help?</h2>
                 <h3>We are here for you</h3>
                 <p>A member of the team will always be happy to work with you.</p>
                 <p>Feel free to contact us by telephone or via the form and we will be sure to get back to you as soon as possible.</p>
 
+                  <p class="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
+                
                 <label for="service">Service *</label>
                 <select name="service" id="service" required>
                     <option value="">Please select</option>
@@ -146,6 +157,8 @@
                     <input type="checkbox" id="consent" name="consent" required>
                     Consent for storing submitted data *
                 </label>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <!-- Agregar campo de reCAPTCHA aquí si es necesario -->
 
