@@ -8,6 +8,7 @@
     <title>RedGeek</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -24,7 +25,7 @@
 
             <div class="right-navbar">
                 <div class="rrss">
-                    <a id="more-info" href="">More Information</a>
+                    <a id="more-info" href=""></a>
                 </div>
                 
                 <div class="menu-icon">
@@ -57,84 +58,156 @@
         <div id="my-personal-header">
             About Us
         </div>
-        <div id="my-personal-text">
 
+        <div id="my-personal-text">
+            <p>
+                At RedGeek, we are a passionate team of young cybersecurity enthusiasts from Argentina, consisting of David and Agustín. With expertise in both red team and blue team approaches, as well as experience in bug bounty programs, we dedicate countless hours to our craft, guided by the principles of ethics and a commitment to excellence.
+            </p>
+            <br>
+            <p>
+                Our goal at RedGeek is to provide our clients with information about the various attack vectors their systems face, along with a series of countermeasures to protect them. Let us uncover vulnerabilities before a threat actor does!
+            </p>
         </div>
+
+        <div id="my-personal-profiles">
+            <div class="profile">
+                <img src="images/david.jpg" id="profile-david" alt="David's Profile">
+                <p>David</p>
+            </div>
+            <div class="profile">
+                <img src="images/agustin.jpg" id="profile-agustin" alt="Agustín's Profile">
+                <p>Agustín</p>
+            </div>
+        </div>
+
     </div>
 
     <div id="enjoy">
         <div id="enjoy-title">
+            Pentesting Services for Businesses
+        </div>
+        <div id="our-services">
+            <p>At RedGeek, we specialize in providing comprehensive pentesting solutions tailored 
+                to the security needs of your business. Whether you're a SME or a large corporation, 
+                we understand the critical importance of protecting your digital assets and ensuring 
+                the integrity of your technological infrastructure. </p>
+            <br>
+            <h2 >Why Pentesting?</h2>
+            <p> Pentesting, or penetration testing, is an essential component in any company's 
+                cybersecurity strategy. By simulating real-world attacks, we can identify vulnerabilities
+                in your systems, applications, and networks, allowing you to take proactive preventive
+                measures to mitigate risks and protect your confidential information.</p>
+            <br>
+            <h2> Our Services </h2>
+            <p> Web Application Pentesting: We assess the security of your web applications to identify 
+                and rectify vulnerabilities such as SQL injections, cross-site scripting (XSS), and more.</p>
+            <p> Network Pentesting: We analyze your network infrastructure for potential entry points for 
+                intruders, ensuring the robustness of your perimeter defenses. </p>
+            <p> Mobile Application Pentesting: We examine the security of your mobile applications for 
+                security flaws that could compromise the privacy of your users and the integrity of your data.</p>
+            <br>
+            <h2> Why Choose Us? </h2>
+            <p> At RedGeek, we are committed to providing the highest quality pentesting services,
+                backed by a team of cybersecurity experts with years of industry experience. Our proven 
+                methodology and advanced techniques enable us to deliver precise results and effective 
+                corrective actions to protect your company against emerging cyber threats.</p>
+            <br>
+            <h2> Protect Yourself Today! </h2>
+            <p> Don't wait for a security incident to occur. Safeguard your business and reputation with
+                 our industry-leading pentesting services. Contact us today for a free assessment and 
+                 discover how we can help strengthen your cyber defenses!"</p>
+            </p>
+        </div>
+
+        <div id="enjoy-title">
             Our Services
         </div>
         <div id="our-services">
-            <img id="our-services-img" src="images/pentesting-icon.png" alt="">
+            <img id="our-services-img" src="images/pentesting-icon.svg" alt="">
             <h1>Pentesting</h1>
         </div>
 <!--      <div id="celular-div">
             <img id="celular-img" src="/images/celular.png" alt="">
         </div>  -->
     </div>
+
     
     <div id="navigation">
         <div id="navigation-title">
-            Navigation
+            Reflection on the Evolution of Cybersecurity in 2023
         </div>
         <div id="navigation-text">
-            <em>Use the navigation menu to scroll through the web page.</em>
+            <em>The year 2023 marked a turning point in the cybersecurity landscape, with a series of events underscoring the importance of having robust online protection measures. From the impact of geopolitical conflicts to the interdependence between cybersecurity and the cloud, we witnessed significant changes highlighting the need to stay ahead in safeguarding critical data and systems.
+                According to a Forbes article, 2023 saw a 40 to 45% increase in global cyberattacks, emphasizing the urgency of leveraging emerging technologies such as artificial intelligence and a zero-trust approach to tackle growing threats.
+            </em>
+        </div>
+        <div id="navigation-title">
+            Protect Your Business Today
+        </div>
+        <div id="navigation-text">
+            <em>Don't wait to fall victim to a cyberattack. At RedGeek, we're here to provide you with the peace of mind you need by offering top-notch pentesting solutions. Contact us today to learn more about how we can protect your business in this ever-evolving digital world.
+            </em>
         </div>
     </div>
 
     <!-- FORMULARIO -->
 
-    <main>
-        <div>
-            <h1>Contact Us</h1>
+    <div id="form">
+        <div id="form-title-description">
+            <h1 id="form-title">Get In Touch</h1>
             <p>Our experts are ready to support wherever you are on the cyber security journey.</p>
         </div>
 
-        <section>
-            <form action="#"    
-                    method="post"
-                    netlify
-                    netlify-honeypot
-                    data-netlify-recaptcha="true"
-                >
+        <section class="form-section">
+            <div id="form-info">
                 <h2>Need Help?</h2>
+                <div class="divider"></div>
                 <h3>We are here for you</h3>
                 <p>A member of the team will always be happy to work with you.</p>
                 <p>Feel free to contact us by telephone or via the form and we will be sure to get back to you as soon as possible.</p>
+            </div>
 
-                  <p class="hidden">
+            <form action="#" method="post" id="form-card"
+                netlify
+                netlify-honeypot
+                data-netlify-recaptcha="true"
+                >
+                <p class="hidden">
                     <label>
-                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    D0n't f1ll th1s 0ut 1f y0u’r3 hum4n: <input name="bot-field" />
                     </label>
-                  </p>
-                
+                </p>
+
                 <label for="service">Service *</label>
-                <select name="service" id="service" required>
+                <select type="select" name="service" id="service" class="custom-select">
                     <option value="">Please select</option>
-                    <option value="Incident Response">Incident Response</option>
-                    <option value="Technical Assurance">Technical Assurance</option>
-                    <option value="Managed Services">Managed Services</option>
-                    <option value="Consulting & Implementation">Consulting & Implementation</option>
-                    <option value="Threat Intelligence">Threat Intelligence</option>
+                    <option value="WebAppPentest">Web Application Penetration Testing</option>
+                    <option value="NetworkPentest">Network Penetration Testing</option>
+                    <option value="MobileAppPentest">Mobile Application Penetration Testing</option>
+                    <option value="IoTPentest">Internet of Things (IoT) Penetration Testing</option>
+                    <option value="ConsultImpl">Consulting & Implementation</option>
                     <option value="Others">Others</option>
                 </select>
+                <div class="error-message" id="error-service">Please select a service</div>
 
                 <label for="first-name">First Name *</label>
-                <input type="text" id="first-name" name="first-name" required>
+                <input type="text" id="first-name" name="first-name">
+                <div class="error-message" id="error-first-name">Please enter your first name</div>
 
                 <label for="last-name">Last Name *</label>
-                <input type="text" id="last-name" name="last-name" required>
+                <input type="text" id="last-name" name="last-name">
+                <div class="error-message" id="error-last-name">Please enter your last name</div>
 
                 <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-
+                <input type="email" id="email" name="email">
+                <div class="error-message" id="error-email">Please enter your email</div>
+                
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone">
 
                 <label for="how">How did you hear about us? *</label>
-                <select name="how" id="how" required>
+            
+                <select type="select" name="how" id="how" class="custom-select">
                     <option value="">Please select</option>
                     <option value="One of my customers recommended NCC Group">One of my customers recommended RedGeek</option>
                     <option value="One of my peers recommended NCC Group">One of my peers recommended RedGeek</option>
@@ -149,27 +222,29 @@
                     <option value="Event or conference" >Event or conference</option>
                     <option value="An NCC Group employee" >An RedGeek employee</option>
                 </select>
-
+                <div class="error-message" id="error-how">Please select how you heard about us</div>
+                
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4"></textarea>
+                
 
                 <label for="consent">
-                    <input type="checkbox" id="consent" name="consent" required>
+                    <input type="checkbox" id="consent" name="consent">
                     Consent for storing submitted data *
                 </label>
+                <div class="consent-message">You consent to RedGeek using the information provided to contact me about relevant content and services. 
+                    For more information, check out our Privacy Policy</div>
+                <div class="error-message" id="error-consent">Consent is required to store and process the data in this form.</div>
 
+                <!--reCAPTCHA-->
                 <div data-netlify-recaptcha="true"></div>
 
-                <!-- Agregar campo de reCAPTCHA aquí si es necesario -->
-
-                <button type="submit">Submit</button>
+                <button type="submit" class="button" id="submit-form">Submit</button>
             </form>
         </section>
-    </main>
-    
+    </div>
 
     
-
     <footer class="site-footer">
         <div class="contenedor1">
             <div class="box-footer">
@@ -185,7 +260,7 @@
             </div>
             <div class="box-footer">
                 <h2>Get In Touch</h2>
-                <p>Contact Me</p>
+                <p>Contact Us</p>
                 <p>Jobs</p>
             </div>
         </div>
@@ -206,11 +281,10 @@
             </div>
 
         </div>    
-
     </footer>
 
     <script src="app.js"></script>
-
-
+    <script src="form.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
