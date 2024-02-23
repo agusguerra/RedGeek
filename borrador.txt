@@ -1,1 +1,36 @@
 borrador
+
+js para que el nav desaparezca al hacer scroll hacia abajo, y aparezca con scroll hacia arriba.
+
+
+ var lastScrollTop = 0;
+
+$(window).scroll(function(){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+        // Scrolling down
+        $('.inner-width').addClass('hidden-nav');
+    } else {
+        // Scrolling up
+        $('.inner-width').removeClass('hidden-nav');
+    }
+    lastScrollTop = st;
+});
+
+$(document).ready(function() {
+    // Verificar posición de desplazamiento al cargar la página
+    var gap = 50;
+    if ($(window).scrollTop() > gap) {
+        $('.inner-width').addClass('hidden-nav');
+    }
+
+    // Agregar evento de desplazamiento para cambiar la visibilidad del navbar
+    $(window).scroll(function() {
+        var st = $(this).scrollTop();
+        if (st > gap) {
+            $('.inner-width').addClass('hidden-nav');
+        } else {
+            $('.inner-width').removeClass('hidden-nav');
+        }
+    });
+});
