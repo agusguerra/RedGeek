@@ -1,4 +1,11 @@
 document.getElementById('form-card').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío predeterminado del formulario
+
+    // Resto del código de validación y redirección aquí
+});
+
+
+document.getElementById('form-card').addEventListener('submit', function(event) {
     var campos = ['service', 'first-name', 'last-name', 'email', 'how']; // Agrega aquí los IDs de todos los campos que quieras validar
     
     for (var i = 0; i < campos.length; i++) {
@@ -130,6 +137,11 @@ function validarFormulario() {
 document.getElementById('form-card').addEventListener('submit', function(event) {
     if (!validarFormulario()) {
         event.preventDefault(); // Evita el envío del formulario si hay errores
+    }
+    else {
+    // Si no hay errores, redirige al usuario a la página "thank-you"
+        console.log('redirigiendo..')
+        window.location.href = "thank-you.html";
     }
 });
 
