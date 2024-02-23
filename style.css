@@ -241,6 +241,12 @@ b{
     font-size: 18px;
 }
 
+a{
+    color: #8996A0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
 
 .site-footer .contenedor2{
     width: 100%;

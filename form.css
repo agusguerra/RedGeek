@@ -164,3 +164,13 @@ select{
         max-width: 400px; /* Establecer el ancho máximo del formulario */
     }
 }
+
+@media screen and (max-width: 767px) {
+    input[type="text"],
+    [type="tel"],
+    [type="email"],
+    [type="select"],
+    textarea {
+        max-width: 100%; /* Establecer un ancho máximo para evitar que se desborden */
+    }
+}
