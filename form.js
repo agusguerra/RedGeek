@@ -1,5 +1,5 @@
 document.getElementById('form-card').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío predeterminado del formulario
+    // event.preventDefault(); // Evita el envío predeterminado del formulario
 
     // Resto del código de validación y redirección aquí
 });
@@ -12,7 +12,7 @@ document.getElementById('form-card').addEventListener('submit', function(event) 
         var campo = document.getElementById(campos[i]);
         var error = document.getElementById('error-' + campos[i]);
         if (campo.value === '') {
-            event.preventDefault();
+            // event.preventDefault();
             campo.style.borderColor = 'red';
             if (error) {
                 error.style.display = 'block';
@@ -30,7 +30,7 @@ document.getElementById('form-card').addEventListener('submit', function(event) 
     var consent = document.getElementById('consent');
     var consentError = document.getElementById('error-consent');
     if (!consent.checked) {
-        event.preventDefault();
+        // event.preventDefault();
         consent.style.outline = '1px solid red';
         if (consentError) {
             consentError.style.display = 'block';
@@ -47,7 +47,7 @@ document.getElementById('form-card').addEventListener('submit', function(event) 
     var how = document.getElementById('how');
     var howError = document.getElementById('error-how');
     if (how.value === '') {
-        event.preventDefault();
+        // event.preventDefault();
         how.style.borderColor = 'red';
         if (howError) {
             howError.style.display = 'block';
@@ -64,7 +64,7 @@ document.getElementById('form-card').addEventListener('submit', function(event) 
     var email = document.getElementById('email');
     var emailError = document.getElementById('error-email');
     if (!isValidEmail(email.value)) {
-        event.preventDefault();
+        // event.preventDefault();
         email.style.borderColor = 'red';
         if (emailError) {
             emailError.style.display = 'block';
@@ -136,7 +136,7 @@ function validarFormulario() {
 // Agregar el evento de escucha para la validación del formulario
 document.getElementById('form-card').addEventListener('submit', function(event) {
     if (!validarFormulario()) {
-        event.preventDefault(); // Evita el envío del formulario si hay errores
+        // event.preventDefault(); // Evita el envío del formulario si hay errores
     }
     else {
     // Si no hay errores, redirige al usuario a la página "thank-you"
